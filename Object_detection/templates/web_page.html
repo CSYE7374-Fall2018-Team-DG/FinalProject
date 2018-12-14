@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+<title>Real time Detection</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+margin: 0;
+background: url("http://all4desktop.com/data_images/original/4218097-solar-space.jpg") no-repeat center  fixed;/
+background-size: cover;
+background-color: #cccccc;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+}
+.content {      
+  text-align: center;
+  margin-top: 15%;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+    display: inline-block;
+  transition-duration: 0.5;
+    padding: 10px;
+    border-radius: 1.5em;
+    width: 175px;
+    font-size: 15px;
+    height: 70px;
+    outline-style: none;
+}
+.btn:hover, .btn:active  {
+  transform: scale(1.1);
+    backface-visibility: hidden;
+    box-shadow: 0 0 8px black;
+    outline-style: none;
+  }
+.btn2 {
+  margin-left: 100px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Object Detection</h1>
+</div>
+<div class="content">
+<form action = "/" method=post> 
+    <button class = "btn1 btn" type=submit name="api" value="real_time_value">Real Time Object Detection</button>
+    <button class="btn2 btn" type=submit name="trained" value="trained_prediction">Object Classification</button>
+</form>
+</div>
+</body>
+</html>
